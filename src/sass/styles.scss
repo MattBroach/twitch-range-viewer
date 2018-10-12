@@ -1,0 +1,105 @@
+@import "_variables";
+
+body {
+  background: $background;
+  color: $text;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  max-width: 318px;
+
+  &.dark {
+    background: $background-dark;
+    color: $text-dark;
+  }
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.header {
+  background: #644a98;
+  color: $background;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.range-title {
+  margin-top: 5px;
+  padding-left: $bar-label-width;
+  padding-bottom: 2px;
+  font-size: 10px;
+  
+  h2 {
+    margin: 0;
+  }
+}
+
+.range-bar-wrapper {
+  height: $bar-height;
+  display: flex;
+  align-content: stretch;
+  font-size: 12px;
+}
+
+%bar-box {
+  height: 100%;
+  line-height: $bar-height;
+
+  span {
+    padding: 0 5px;
+  }
+}
+
+.range-min {
+  @extend %bar-box;
+  width: $bar-label-width;
+  flex: 0 0 $bar-label-width;
+  text-align: right;
+}
+
+.range-max {
+  @extend %bar-box;
+  width: $bar-label-width;
+  flex: 0 0 $bar-label-width;
+  text-align: left;
+}
+
+.range-bar {
+  @extend %bar-box;
+  @extend %bar-back;
+  position: relative;
+  flex: 1;
+}
+
+.range-bar-filled {
+  background: $bar-active;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $bar-height;
+  border-right: 2px solid $bar-active-border;
+}
+
+.range-value {
+  position: absolute;
+  top: 0;
+  line-height: $bar-height;
+
+  &.left {
+    text-align: right;
+    transform: translateX(-100%);
+    color: $bar-active-border;
+  }
+
+  &.right {
+    text-align: left;
+    color: $text;
+  }
+}

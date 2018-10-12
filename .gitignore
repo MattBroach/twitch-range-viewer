@@ -1,0 +1,7 @@
+# Built versions #
+##################
+dist/
+
+# Dev tools #
+#############
+data/

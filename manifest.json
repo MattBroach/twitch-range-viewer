@@ -1,0 +1,49 @@
+{
+  "id": "u00000000000000000001219194236",
+  "state": "Testing",
+  "version": "0.0.1",
+  "anchor": "",
+  "panel_height": 500,
+  "author_name": "Matt Nishi-Broach",
+  "support_email": "go.for.dover@gmail.com",
+  "name": "Range Viewer",
+  "description": "Visualizes a series of range data",
+  "summary": "Summary of extension 1219194236.",
+  "viewer_url": "https://localhost.rig.twitch.tv:8080/panel.html",
+  "viewer_urls": {
+    "panel": "https://localhost.rig.twitch.tv:8080/panel.html"
+  },
+  "views": {
+    "panel": {
+      "viewer_url": "https://localhost.rig.twitch.tv:8080/panel.html",
+      "height": 500
+    },
+    "config": {
+      "viewer_url": "https://localhost.rig.twitch.tv:8080/config.html"
+    },
+    "live_config": {
+      "viewer_url": "https://localhost.rig.twitch.tv:8080/live_config.html"
+    }
+  },
+  "config_url": "https://localhost.rig.twitch.tv:8080/config.html",
+  "live_config_url": "https://localhost.rig.twitch.tv:8080/live_config.html",
+  "icon_url": "images/icon-100.png",
+  "icon_urls": {
+    "100x100": "images/icon-100.png"
+  },
+  "screenshot_urls": [
+    "images/screenshot.jpg"
+  ],
+  "asset_urls": null,
+  "installation_count": -42,
+  "can_install": true,
+  "whitelisted_panel_urls": [],
+  "whitelisted_config_urls": [],
+  "required_broadcaster_abilities": [],
+  "eula_tos_url": "",
+  "privacy_policy_url": "",
+  "request_identity_link": false,
+  "vendor_code": "",
+  "sku": "",
+  "bits_enabled": false
+}
